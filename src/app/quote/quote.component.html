@@ -1,1 +1,13 @@
-<p></p>
+<div>
+
+    <h1>This is a web application developed that allows you to post a quote, vote on it and even delete it.</h1>
+    <hr>
+    <ul>
+        <div *ngFor='let quote of quotes'>
+          <li>
+            {{quote.quote}}.  ~  {{quote.author}}  <br> posted by {{quote.quoteposter}}
+        </li>
+        </div>
+             
+    </ul>
+  </div>

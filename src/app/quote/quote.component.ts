@@ -15,7 +15,7 @@ quotes= [
   new Quote ("A smile abroad is often a scowl at home","Alfred Lord Tennyson","Alesha Dickson"),
   new Quote ("The man who has no imagination has no wings","Muhammad Ali","Mo Salad"),
   new Quote ("I think that I shall never see a poem as lovely as a tree","Joyce Kilmer","Teafunny Haddish"),
-  new Quote ("We have got to put alot of money into changing behaviour","Bill Gates","Use code TFUE")
+  new Quote ("We have got to put alot of money into changing behaviour","Bill Gates","Not TFUE")
 ];
 
   constructor() { }
