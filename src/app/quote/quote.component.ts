@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-quotes= [
+quotes:Quote[] = [
   new Quote ("Life is too short to blend in","Paris Hilton","Michael Shoemaker"),
   new Quote ("Is life not a thousand times too short for us to bore ourselves?","Friedrich Nietzche","Ellen Generous"),
   new Quote ("Most of my stories are fantasy","Ray Bradbury","Lebrown James"),
