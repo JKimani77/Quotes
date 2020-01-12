@@ -1,23 +1,62 @@
 <div>
 
-    <h1>This is an application for quotes that allows you to do a bunch of stuff on quotes..</h1>
+    <h1>This is an application that can add and delete quotes..it's still kinda shitty.</h1>
+
     <hr>
     <ul>
-        <div class="card" *ngFor='let quote of quotes;let i = index'>
+       <br>
 
-            <div class="card-body">
-                <i class="fa fa-quote-left"></i>
-            <p>{{quote.quote}}</p>
-            <p>{{quote.author}}</p>
+       <div class="row">
+        <button (click)="onNew()" class="btn btn-info form-btn" id="form-btn">Post a new Quote</button>
+
+        <form (ngSubmit)="onSave()"  *ngIf="displayNew" id="quote-form">
+
+            <span (click)="onCancel()" class="del"><i class="fa fa-times-circle"></i></span>
+            <div class="form-post">
+                <label for="text-input">Quote</label>
+                <textarea class="form-control" [(ngModel)]="quoteModel.quote" placeholder="Type in a new quote here" name="text" id="text-input" rows="10" required></textarea>
             </div>
 
-            <div class="card-footer">
-                <app-quote-details [quote]='quote'></app-quote-details>
+            <div class="form-post">
+                <label for="author-input">Author</label>
+                <input class="form-control" type="text" [(ngModel)]="quoteModel.author" name="author" id="author-input" placeholder="Author of the quote" required>
+            </div>
+                
+            <div class="form-post" >
+                <label for="poster-input">Poster</label>
+                <input id="poster-input" class="form-control" type="text" [(ngModel)]="quoteModel.poster" name="poster" placeholder="Your name" required>
             </div>
 
-       <!--   <p>Posted by {{quote.quoteposter}}</p> --> 
+            <button type="submit" class="btn btn-primary">{{submitType}}</button>
+        </form>
+       </div>
+
+
+        <div class="container">
+        <div class="row">
+            <div class="card-columns">
+
+            <div class="card" *ngFor='let quote of quotes;let i = index'>
+                <div class="card-body">
+                    <i class="fa fa-quote-left"></i>
+                    <p>{{quote.quote}}</p>
+                    <p>{{quote.author}}</p>
+                </div>          
+            
+                <div class="card-footer">
+                    <app-quote-details [quote]='quote' ></app-quote-details>
+                    <br>
+                    <button (click) = "delete(i)">DELETE</button>
+                </div>
+
+       
 
         </div>
-             
+
+        </div>
+        </div>
+        </div>
+        
+        
     </ul>
   </div>

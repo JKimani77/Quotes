@@ -1,11 +1,18 @@
 header{
     text-align: center;
     margin: 30px;  
+    color: #ffffff;
   }
 
   
   h1 {
     text-transform: uppercase;
-    font-size: 70px;
-    letter-spacing: 30px;
+    font-size: 60px;
+    letter-spacing: 20px;
+    
+  }
+
+  body{
+    background-image: url(../../src/assets/backgroundone.jpg);
+    background-size: cover;
   }
