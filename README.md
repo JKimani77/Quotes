@@ -1,6 +1,11 @@
 # Quotes
+
+## About
 This project is a web application that allows users to create new quotes of their own liking, and vote on them.
 The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5. on 12th JANUARY 2020
+
+## Creator
+The application was created by Joshua Kimani.
 
 
 ## Downloading
@@ -28,11 +33,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-# License
+## License
 
 This project is under the MIT LICENSE.
 All rights reserved. 2020
 
-# AOB
-
+## AOB
+By J.Kimani.
 Incase you come across any issues or would like to give comments or feedback, contact me; jkkimani77@gmail.com
