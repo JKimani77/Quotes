@@ -9,6 +9,8 @@
        <div class="row">
         <button (click)="onNew()" class="btn btn-info form-btn" id="form-btn">Post a new Quote</button>
 
+        <br>
+
         <form (ngSubmit)="onSave()"  *ngIf="displayNew" id="quote-form">
 
             <span (click)="onCancel()" class="del"><i class="fa fa-times-circle"></i></span>
@@ -24,13 +26,14 @@
                 
             <div class="form-post" >
                 <label for="poster-input">Poster</label>
-                <input id="poster-input" class="form-control" type="text" [(ngModel)]="quoteModel.poster" name="poster" placeholder="Your name" required>
+                <input id="poster-input" class="form-control" type="text" [(ngModel)]="quoteModel.quoteposter" name="poster" placeholder="Your name" required>
             </div>
 
             <button type="submit" class="btn btn-primary">{{submitType}}</button>
         </form>
        </div>
 
+       <br>
 
         <div class="container">
         <div class="row">
@@ -39,8 +42,8 @@
             <div class="card" *ngFor='let quote of quotes;let i = index'>
                 <div class="card-body">
                     <i class="fa fa-quote-left"></i>
-                    <p>{{quote.quote}}</p>
-                    <p>{{quote.author}}</p>
+                    <p>{{quote.quote}}.</p>
+                    <p>~{{quote.author}}</p>
                 </div>          
             
                 <div class="card-footer">
