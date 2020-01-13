@@ -52,6 +52,24 @@
                     <button (click) = "delete(i)">DELETE</button>
                 </div>
 
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-action">
+                            {{quote.upvotes}}
+                        </div>
+                       <div class="col-3-action">
+                         <button (click)="quote.upvotes = quote.upvotes +1">upvote</button>                        
+                       </div> 
+                       <div class="col-3-action">
+                         <button (click)="quote.downvotes = quote.downvotes +1"></button>
+                       </div>
+                       <div >
+
+                       </div>
+
+                    </div>
+
+                </div>
        
 
         </div>
