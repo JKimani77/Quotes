@@ -15,7 +15,7 @@ export class QuoteComponent implements OnInit {
   submitType: string = 'Save';
 
   onNew(){
-    this.quoteModel = new Quote("","","",0,0); //this will initiate new quote
+    this.quoteModel = new Quote("","","",0,0,new Date() ); //this will initiate new quote
     this.submitType = 'Save';  
     this.displayNew = true;  //to display the quote form section for posting new quote
   }
@@ -32,11 +32,11 @@ export class QuoteComponent implements OnInit {
   }
 
 quotes = [
-  new Quote ("Life is too short to blend in","Paris Hilton","Michael Shoemaker",0,0),
-  new Quote ("The grass is greener where you water it","Neil Barringham","Ellen Generous",0,0),
-  new Quote ("Most of my stories are fantasy","Ray Bradbury","Lebrown James",0,0),
-  new Quote ("A smile abroad is often a scowl at home","Alfred Lord Tennyson","Alesha Dickson",0,0),
-  new Quote ("The man who has no imagination has no wings","Muhammad Ali","Mo Salad",0,0),
+  new Quote ("Life is too short to blend in","Paris Hilton","Michael Shoemaker",0,0, new Date()),
+  new Quote ("The grass is greener where you water it","Neil Barringham","Ellen Generous",0,0, new Date()),
+  new Quote ("Most of my stories are fantasy","Ray Bradbury","Lebrown James",0,0, new Date()),
+  new Quote ("A smile abroad is often a scowl at home","Alfred Lord Tennyson","Alesha Dickson",0,0, new Date()),
+  new Quote ("The man who has no imagination has no wings","Muhammad Ali","Mo Salad",0,0, new Date()),
   
 ];
 
