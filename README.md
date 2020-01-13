@@ -6,6 +6,7 @@ The project was generated with [Angular CLI](https://github.com/angular/angular-
 
 ## Creator
 The application was created by Joshua Kimani.
+Here's a link to the deployed site; https://jkimani77.github.io/Quotes/
 
 
 ## Downloading
