@@ -1,6 +1,6 @@
 <div>
 
-    <h1>This is an application that adds and deletes quotes, as well as showing the time the goal was created..it's still kinda shitty.</h1>
+    <h1>This is an application where users can create quotes and even vote on them! &nbsp; It even shows how long ago the quotes were created.</h1>
 
     <hr>
     <ul>
@@ -57,12 +57,17 @@
                         <div class="col-action">
                             {{quote.upvotes}}
                         </div>
+                        &nbsp;
                        <div class="col-3-action">
-                         <button (click)="quote.upvotes = quote.upvotes +1">Big PP</button>                        
+                         <button (click)="quote.upvotes = quote.upvotes +1" class="btn btn-success">Like</button>                        
                        </div> 
+                       &ensp;
+                       &ensp;
+                       &ensp;
                        <div class="col-3-action">
-                         <button (click)="quote.downvotes = quote.downvotes +1">Small PP</button>
+                         <button (click)="quote.downvotes = quote.downvotes +1" class="btn btn-danger">Dislike</button>
                        </div>
+                       &nbsp;
                        <div class="col-3-action">
                             {{quote.downvotes}}
                        </div>
